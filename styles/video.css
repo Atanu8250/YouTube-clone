@@ -1,0 +1,243 @@
+nav+div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 72% 28%;
+    padding: 20px 60px;
+    background-color: #181818;
+    min-height: 92vh;
+}
+
+#main_video {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 20px;
+
+}
+
+#main_video>div:first-child {
+    height: 550px;
+    width: 100%;
+}
+
+#desc {
+    padding: 10px;
+}
+
+#desc>h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#desc>h3+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#desc>h3+div>p:first-child {
+    color: gray;
+    font-size: 14px;
+}
+
+#desc>h3+div>p:first-child>span {
+    color: gray;
+    font-size: 14px;
+}
+
+#desc>h3+div>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#desc>h3+div>div:last-child>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#desc>h3+div>div:last-child>div>img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+#channel_about{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-top: 1px solid rgb(53, 53, 53);
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+#channel_about>img:first-child{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#channel_about>div:last-child{
+    width: 93%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#channel_about>div:last-child>p:first-child{
+    margin: 5px 0px;
+    font-weight: 600;
+}
+
+#channel_about>div:last-child>p:nth-child(2){
+    font-size: 12px;
+    color: gray;
+}
+
+#channel_about>div:last-child>p:nth-child(3){
+    margin: 15px 0px;
+    font-size: 18px;
+}
+
+#channel_about>div:last-child>p:nth-child(4){
+    margin: 15px 0px;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Subscribe button */
+#channel_about>div:last-child>button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(229, 0, 0);
+    border-radius: 2px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#right>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 10px;
+}
+
+#right>div>p{
+    cursor: pointer;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 16px;
+    border: 0.5px solid rgb(232, 232, 232);
+    background-color: #303030;
+    font-size: 15px;
+}
+
+#right>div>p:first-child{
+    background-color: white;
+    color: black;
+}
+
+#recomended_videos{
+    display: flex;
+    flex-direction: column;
+}
+
+#recomended_videos>div{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 48% 49%;
+    gap: 15px;
+    margin: 15px 0px;
+}
+
+#recomended_videos>div>div:first-child{
+    height: 105px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+#recomended_videos>div>div:first-child>img{
+    position: relative;
+    top: -23px;
+    height: 140%;
+    width: 100%;
+}
+
+#recomended_videos>div>div:first-child>img+p{
+    letter-spacing: 1px;
+    padding: 3px 4px;
+    color: rgba(255, 255, 255, 0.873);
+    background-color: #181818f1;
+    border: none;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* description box */
+#recomended_videos>div>div:last-child{
+    width: 100%;
+    display: flex;
+    padding: 0px 3px 5px 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#recomended_videos>div>div:last-child>p:first-child{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#recomended_videos>div>div:last-child>p:nth-child(2){
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(154, 154, 154);
+}
+
+#recomended_videos>div>div:last-child>p:nth-child(3){
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(154, 154, 154);
+}
+
+
+/* Scrollbar design */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #101010;
+    border-radius: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #181818;
+    border-radius: 10px;
+}

@@ -1,0 +1,23 @@
+body{
+    background-color: #181818;
+    color: white;
+}
+
+form{
+    width: 200px;
+    height: 180px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px, rgba(255, 255, 255, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+form>input{
+    width: 100%;
+    background-color: #202020;
+    font-size: 18px;
+    padding: 5px;
+}

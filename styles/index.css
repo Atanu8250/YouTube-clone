@@ -1,0 +1,222 @@
+#left{
+    height: 95vh;
+    width: 75px;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 300px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#left>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+    font-size: 11px;
+}
+
+#left>div>span{
+    font-size: 27px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+#left>div>img{
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+
+#left_open{
+    height: 95vh;
+    width: 167px;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding-bottom: 300px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+#left_open>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#left_open>div>img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+
+#sort{
+    margin-left: 75px;
+    /* margin-left: 160px; */
+    width: 94vw;
+    /* width: 88vw; */
+    padding: 10px 20px;
+    background-color: #101010;
+    font-size: 18px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#sort>button{
+    background-color: #313131;
+    padding: 5px 15px;
+    font-size: 18px;
+    border-radius: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+#container{
+    margin-left: 75px;
+    /* margin-left: 165px; */
+    border: 1px soild red;
+    width: 94vw;
+    /* width: 88vw; */
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    background-color: #181818;
+    min-height: 85vh;
+}
+
+#container>div{
+    cursor: pointer;
+}
+
+#container>div>div:first-child{
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#container>div>div:first-child>img{
+    position: relative;
+    top: -32px;
+    height: 134%;
+    width: 100%;
+}
+
+#container>div>div:first-child>img+p{
+    letter-spacing: 1px;
+    padding: 3px 4px;
+    color: rgba(255, 255, 255, 0.873);
+    background-color: #181818f1;
+    border: none;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    font-size: 12px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container>div>div:last-child{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* PROFILE */
+#container>div>div:last-child>img:first-child{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    margin: 5px 15px;
+}
+
+#container>div>div:last-child>div>p:first-child{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#container>div>div:last-child>div>p:nth-child(2){
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(154, 154, 154);
+}
+
+#container>div>div:last-child>div>p:nth-child(3){
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(154, 154, 154);
+}
+
+
+/*======================= MEDIUM SCREEN =======================*/
+@media all and (max-width: 800px) and (min-width:600px) {
+    #container{
+        padding: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    #sort{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    #left{
+        display: none;
+    }
+}
+
+
+/*======================== SMALL SCREEN ========================*/
+@media all and (max-width: 599px) and (min-width: 250px) {
+    #container{
+        padding: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    #sort{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    #left{
+        display: none;
+    }
+}
